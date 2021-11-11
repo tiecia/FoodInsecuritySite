@@ -7,12 +7,12 @@
 <body>
     <div class="menublock" id="navbar">
         <ul class="menu" id="menu">
-            <li><a id="menuText" href="#homeImg">Home</a></li>
-            <li><a id="menuText" href="#whatImg">What is it?</a></li>
-            <li><a id="menuText" href="#childImg">Children</a></li>
-            <li><a id="menuText" href="#parentImg">Parents</a></li>
-            <li><a id="menuText" href="#seniorImg">Seniors</a></li>
-            <li><a id="menuText" href="#howImg">How can you help?</a></li>
+            <li><a class="menuItem" href="#homeImg">Home</a></li>
+            <li><a class="menuItem" href="#whatImg">What Is It?</a></li>
+            <li><a class="menuItem" href="#childImg">Children</a></li>
+            <li><a class="menuItem" href="#parentImg">Parents</a></li>
+            <li><a class="menuItem" href="#seniorImg">Seniors</a></li>
+            <li><a class="menuItem" href="#howImg">Can I Help?</a></li>
             
         </ul>
         <div class="progress-container">
@@ -20,7 +20,7 @@
         </div>
     </div>
     
-    <div class="parallax" id="homeImg" style="background-image: url(images/fire.jpg)">
+    <div class="parallax" id="homeImg" style="background-image: url(images/foodHomeDark.jpg)">
         <div id="title" class="nameDiv">
             <h1>Food Insecurity in Spokane</h1>
             <h3>and it's effects on human development from childhood through seniorhood.</h3>
@@ -28,7 +28,7 @@
     </div>
 
     
-    <div class=parallax id="videoImg" style="background-image: url(images/joel.webp)"> 
+    <div class=parallax id="videoImg" style="background-image: url(images/foodInsec.jpg)"> 
         <div id="subBodyText">
             <p>{General information about food insecurity. Inspirational quote possibly?}</p>
         </div>
@@ -69,7 +69,7 @@
     </div>
     
     <!--    Children Effects    -->
-    <div class=parallax id="childImg" style="background-image: url(images/homeless.jpg)">
+    <div class=parallax id="childImg" style="background-image: url(images/child.jpg)">
         <div id="subTitleDiv">
             <h1 id="subTitleText">Effects on Children</h1>
         </div>
@@ -125,8 +125,15 @@
             </div>
         </div>
     </div>
-
-    <div class="menuspace"></div>
+    
+    <div class="parallax">
+        <div class="bottomBar">
+            <ul class="bottomBarMenu" id="bottomMenu">
+                <li><a class="aboutButton" href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="menuspace"/>
     <script>
         window.addEventListener('load', checkBrowser());
         window.onscroll = function() {menubarscroll()};
@@ -143,23 +150,32 @@
         
         function menubarscroll(){
             if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                //while scrolled the bar is in this position
+                //while scrolled down
                 document.getElementById("navbar").style.top = "-00px";
                 document.getElementById("navbar").style.backgroundColor = "white";
                 document.getElementById("menu").style.color = "black";
                 document.getElementById("navbar").style.paddingTop = "0px";
                 document.getElementById("navbar").style.paddingBottom = "0px";
                 document.getElementById("myBar").style.backgroundColor = "lightblue";
-                
+
+                var headerElements = document.getElementsByClassName("menuItem");
+                for(let i = 0; i<headerElements.length; i++){
+                    headerElements[i].style.color = "black";
+                }
             } 
             else {
-                //while NOT scrolled the bar is in this position
+                //while scrolled up
                 document.getElementById("myBar").style.backgroundColor = "transparent";
                 document.getElementById("navbar").style.top = "0px";
                 document.getElementById("navbar").style.backgroundColor = "transparent";
                 document.getElementById("menu").style.color = "white";
                 document.getElementById("navbar").style.paddingTop = "40px";
                 document.getElementById("navbar").style.paddingBottom = "40px";
+                
+                var headerElements = document.getElementsByClassName("menuItem");
+                for(let i = 0; i<headerElements.length; i++){
+                    headerElements[i].style.color = "gray";
+                }
             }
             
             var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
