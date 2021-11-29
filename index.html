@@ -29,12 +29,14 @@
 
     
     <div class=parallax id="videoImg" style="background-image: url(images/foodInsec.jpg)"> 
-        <div id="subBodyText">
-            <p>{General information about food insecurity. Inspirational quote possibly?}</p>
+        <div id="titleBodyText">
+            <p id="titleParagraph">35.3% of residents in the Logan neighborhood are receiving food stamp benefits</p>
         </div>
+<!--
         <div id="videoDiv">
             <h1 id="videoTitleText">{Something extra can go here}</h1>
         </div>
+-->
 <!--
         <iframe id="video" width="1000" height="700" src="https://www.youtube.com/embed/eFTLKWw542g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
@@ -43,26 +45,37 @@
     </div>
     
     <!--    What is food insecurity?    -->
-    <div class=parallax id="whatImg" style="background-image: url(images/debtback.jpeg)">
+    <div class=parallax id="whatImg" style="background-image: url(images/loganmap.PNG)">
         <div id="subTitleDiv">
             <h1 id="subTitleText">What is food insecurity?</h1>
         </div>
         <div id="subBodyText">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor, elit quis iaculis pulvinar, turpis lacus pulvinar metus, at elementum mi erat vitae nulla. Donec luctus hendrerit sapien eget ultricies. Cras a leo laoreet, volutpat elit ut, auctor magna. Praesent pellentesque ultrices mauris ac dignissim. Nam id sem lacinia, tincidunt massa vel, gravida diam. In tristique hendrerit tellus, vitae facilisis purus maximus et. Vestibulum congue libero at nisi fringilla, quis laoreet dolor rutrum. In orci massa, consectetur in urna blandit, commodo condimentum mauris. Nam sed odio sed nibh volutpat iaculis. Etiam at tempus justo. Vivamus cursus, velit eu condimentum rutrum, felis orci imperdiet mauris, quis tincidunt risus arcu at lectus. Nunc eu diam orci.
+            <p class=secondBody>The USDA defines food insecurity as “consistent access to adequate food is limited by a lack of money and other resources at times during the year.”</p>
+            <p class="secondHeading">The USDA's four tiers of food security:</p>
             
-            </p>
-            <p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor, elit quis iaculis pulvinar, turpis lacus pulvinar metus, at elementum mi erat vitae nulla. Donec luctus hendrerit sapien eget ultricies. Cras a leo laoreet, volutpat elit ut, auctor magna. Praesent pellentesque ultrices mauris ac dignissim. Nam id sem lacinia, tincidunt massa vel, gravida diam. In tristique hendrerit tellus, vitae facilisis purus maximus et. Vestibulum congue libero at nisi fringilla, quis laoreet dolor rutrum. In orci massa, consectetur in urna blandit, commodo condimentum mauris. Nam sed odio sed nibh volutpat iaculis. Etiam at tempus justo. Vivamus cursus, velit eu condimentum rutrum, felis orci imperdiet mauris, quis tincidunt risus arcu at lectus. Nunc eu diam orci.
+            <ul class=descList>
+                <li>High food security: no reported indications of food-access problems or limitations.</li>
+                <li>Marginal food security: one or two reported indications-typically of anxiety over food sufficiency or shortage of food in the house. Little or no indication of changes in diets or food intake.</li>
+                <li>Low food security: reports of reduced quality, variety or desirability of diet. Little or no indication of reduced food intake.</li>
+                <li>Very low food security: reports of multiple indications of disrupted eating patterns and reduced food intake.</li>
+            </ul>
             
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor, elit quis iaculis pulvinar, turpis lacus pulvinar metus, at elementum mi erat vitae nulla. Donec luctus hendrerit sapien eget ultricies. Cras a leo laoreet, volutpat elit ut, auctor magna. Praesent pellentesque ultrices mauris ac dignissim. Nam id sem lacinia, tincidunt massa vel, gravida diam. In tristique hendrerit tellus, vitae facilisis purus maximus et. Vestibulum congue libero at nisi fringilla, quis laoreet dolor rutrum. In orci massa, consectetur in urna blandit, commodo condimentum mauris. Nam sed odio sed nibh volutpat iaculis. Etiam at tempus justo. Vivamus cursus, velit eu condimentum rutrum, felis orci imperdiet mauris, quis tincidunt risus arcu at lectus. Nunc eu diam orci.
+            <p class="secondHeading">To be considered food insecure a family must exhibit one of the following:</p>
             
-            </p>
+            <ul class=descList>
+                <li>Inability to buy healthy foods.</li>
+                <li>Lack of protection from unaffordable health care costs.</li>
+                <li>Lack of affordable housing to prep and store food.</li>
+                <li>Lack of transportation to purchase healthy and affordable food.</li>
+            </ul>
+<!--            <hr class=solidDivider>-->
+            <p class=newParagraph>The residents of the Logan neighborhood in Spokane, Washington suffer from many compounding factors that make is difficult for them to have reliable food access. Most residents live over 0.5 miles from a supermarket and many residents cannot afford cars meaning they must walk to and from the store carrying their groceries. This can be dangerous especially in the winter and when residents are forced to go late at night. Moreover, the presence of only one supermarket within walking distance means prices are unfairly high, thus forcing financially strained residents to purchase less food.</p>
             <div id="debtsGraphRow">
                 <div id="debtsGraphCol">
-                    <img id="debtsImage" src="images/debt.gif">
+                    <img id="debtsImage" src="images/spokanefoodprice.png">
                 </div>
                 <div id="debtsGraphCol">
-                    <img id="debtsImage" src="images/debt2.gif">
+                    <img id="debtsImage" src="images/foodstampdata.png">
                 </div>
             </div>
         </div>
@@ -73,14 +86,27 @@
         <div id="subTitleDiv">
             <h1 id="subTitleText">Effects on Children</h1>
         </div>
-        <div id="subBodyText">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor, elit quis iaculis pulvinar, turpis lacus pulvinar metus, at elementum mi erat vitae nulla. Donec luctus hendrerit sapien eget ultricies. Cras a leo laoreet, volutpat elit ut, auctor magna. Praesent pellentesque ultrices mauris ac dignissim. Nam id sem lacinia, tincidunt massa vel, gravida diam. In tristique hendrerit tellus, vitae facilisis purus maximus et. Vestibulum congue libero at nisi fringilla, quis laoreet dolor rutrum. In orci massa, consectetur in urna blandit, commodo condimentum mauris. Nam sed odio sed nibh volutpat iaculis. Etiam at tempus justo. Vivamus cursus, velit eu condimentum rutrum, felis orci imperdiet mauris, quis tincidunt risus arcu at lectus. Nunc eu diam orci.
+        <div id="childrenBodyText">
+            <p class=secondBody>Children are among the most impacted by malnourishment because of their developmental stage of life. According to the Feeding America organization, an estimated 13 million American children face food insecurity after the coronavirus pandemic.</p>
             
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor, elit quis iaculis pulvinar, turpis lacus pulvinar metus, at elementum mi erat vitae nulla. Donec luctus hendrerit sapien eget ultricies. Cras a leo laoreet, volutpat elit ut, auctor magna. Praesent pellentesque ultrices mauris ac dignissim. Nam id sem lacinia, tincidunt massa vel, gravida diam. In tristique hendrerit tellus, vitae facilisis purus maximus et. Vestibulum congue libero at nisi fringilla, quis laoreet dolor rutrum. In orci massa, consectetur in urna blandit, commodo condimentum mauris. Nam sed odio sed nibh volutpat iaculis. Etiam at tempus justo. Vivamus cursus, velit eu condimentum rutrum, felis orci imperdiet mauris, quis tincidunt risus arcu at lectus. Nunc eu diam orci.
-                
-            </p>
-            <img id="singleImage" src="images/vetsub.jpg">
+            <p class="secondHeading">Children who experience hunger are at a higher risk of:</p>
+            
+            <ul class=descList>
+                <li>Being hospitalized</li>
+                <li>Developing conditions such as anemia or asthma</li>
+                <li>Performing poorly in school</li>
+            </ul>
+            
+            <p class="secondHeading">Common causes of malnourishment among children are:</p>
+            
+            <ul class=descList>
+                <li>Poor air quality</li>
+                <li>Lack of social infrastructure</li>
+                <li>Inadequate education</li>
+            </ul>
+            
+            <p>In the Washington State Healthy Youth Survey, under 20% of students not experiencing food insecurity reported having low grades, while 35% of students experiencing food insecurity reported having low grades.</p>
+            <img id="singleImage" src="images/imhungry.jfif">
         </div>
     </div>
     
