@@ -136,7 +136,7 @@ body{
     padding-left: 2%;
 }
 
-#subBodyText{
+.subBodyText{
     background-color: white;
     height: auto;
     text-align: center;
@@ -385,4 +385,12 @@ body{
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 125px;
+}
+
+#parentBodyText {
+    padding-bottom: 150px;
+}
+
+#seniorBodyText {
+    padding-bottom: 150px;
 }
