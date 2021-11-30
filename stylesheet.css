@@ -200,9 +200,10 @@ body{
 }
 
 #parentImg{
-    min-height:1500px;
+    min-height:1900px;
     background-size: cover;
     z-index: 100;
+    background-position: top;
 }
 
 #seniorImg{
@@ -215,7 +216,7 @@ body{
     min-height:2500px;
     background-size: cover;
     z-index: 100;
-    background-position: top;
+    background-position: center;
 }
 
 #bernSubBodyText{
@@ -393,4 +394,8 @@ body{
 
 #seniorBodyText {
     padding-bottom: 150px;
+}
+
+#youText {
+    padding-bottom: 100px;
 }

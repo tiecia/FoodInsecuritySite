@@ -30,18 +30,8 @@
     
     <div class=parallax id="videoImg" style="background-image: url(images/foodInsec.jpg)"> 
         <div id="titleBodyText">
-            <p id="titleParagraph">35.3% of residents in the Logan neighborhood are receiving food stamp benefits</p>
-        </div>
-<!--
-        <div id="videoDiv">
-            <h1 id="videoTitleText">{Something extra can go here}</h1>
-        </div>
--->
-<!--
-        <iframe id="video" width="1000" height="700" src="https://www.youtube.com/embed/eFTLKWw542g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
--->
-        
+            <p id="titleParagraph">35.3% of residents in the Logan neighborhood are receiving food stamp benefits.</p>
+        </div>        
     </div>
     
     <!--    What is food insecurity?    -->
@@ -111,19 +101,27 @@
     </div>
     
     <!--    Parent Effects    -->
-    <div class=parallax id="parentImg" style="background-image: url(images/aids.jpg)">
+    <div class=parallax id="parentImg" style="background-image: url(images/liningup.jfif)">
         <div id="subTitleDiv">
             <h1 id="subTitleText">Effects on Parents</h1>
         </div>
         <div class=subBodyText id="parentBodyText">
             <p class=secondBody>45.66% of the Logan population age 18-64 live in poverty.</p>
-            <p>{Need more on parental impact}</p>
+            <p>Food insecurity affects every age group in a population differently, but each age group’s experience with this issue affects their relationships with each other. Thus, there is more to the crisis of food insecurity amongst the Logan Neighborhood’s adult population than simply a lack of food—it involves their demographics, it becomes a vicious cycle, and it shapes their relationships with their families and children.</p>
+            
+            <p class="secondHeading">Common effects on parents are:</p>
+            
+            <ul class=descList>
+                <li>Heightened levels of stress, anxiety, and depression.</li>
+                <li>Mental health issues that lead to a negative and impatient parenting style, which effects their children’s behavioral patterns.</li>
+                <li>Impaired work performance leading to reduced earnings.</li>
+            </ul>
             <img id="singleImage" src="images/foodsecuritytable.png">
         </div>
     </div>
     
     <!--    Senior Effects    -->
-    <div class=parallax id="seniorImg" style="background-image: url(images/crack.jpg)">
+    <div class=parallax id="seniorImg" style="background-image: url(images/seniorbackground.jpg)">
         <div  id="subTitleDiv">
             <h1 id="subTitleText">Effects on Seniors</h1>
         </div>
@@ -135,7 +133,7 @@
     </div>
     
     <!--    How can you help?    -->
-    <div class=parallax id="howImg" style="background-image: url(images/bern2.jpg)">
+    <div class=parallax id="howImg" style="background-image: url(images/ccexample.jpg)">
         <div id="subTitleDiv">
             <h1 id="subTitleText">How can you help?</h1>
         </div>
@@ -155,20 +153,12 @@
             </ul>
             <div id="bernGraphRow">
                 <div id="bernGraphCol"> 
-                    <img id="bernLeftImg" src="images/cc.jpg">
+                    <img id="bernLeftImg" src="images/cclogo.jpg">
                 </div>
                 <div id="debtsGraphCol">
-                    <img id="bernRightImg" src="images/bernpaper.jpeg">
+                    <img id="bernRightImg" src="images/ccgu.jpg">
                 </div>
             </div>
-        </div>
-    </div>
-    
-    <div class="parallax">
-        <div class="bottomBar">
-            <ul class="bottomBarMenu" id="bottomMenu">
-                <li><a class="aboutButton" href="about.html">About</a></li>
-            </ul>
         </div>
     </div>
     <div class="menuspace"/>
@@ -176,11 +166,6 @@
         window.addEventListener('load', checkBrowser());
         window.onscroll = function() {menubarscroll()};
         function checkBrowser(){
-            if(navigator.userAgent.indexOf("Chrome") === -1){
-                alert("Please use Google Chrome for the best experience");
-            } else if(navigator.userAgent.indexOf("Edge") > -1 || navigator.userAgent.indexOf("Edg") > -1) {
-                alert("Please use Google Chrome for the best experience");
-            }
             for (opacity = 0; opacity < 1.1; opacity = opacity + 0.1) {           
                 setTimeout(function(){document.getElementById('title').style.opacity = opacity;},100)                       
             } 
