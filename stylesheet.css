@@ -111,7 +111,7 @@ body{
     text-align: center;
 }
 #videoImg{
-    min-height: 1700px;
+    min-height: 1000px;
     background-size: cover;
     background-position: center;
     background-color: gray
@@ -136,14 +136,14 @@ body{
     padding-left: 2%;
 }
 
-#subBodyText{
+.subBodyText{
     background-color: white;
     height: auto;
     text-align: center;
     padding-top: 30px;
     padding-left: 20%;
     padding-right: 20%;
-    padding-bottom: 70px;
+    padding-bottom: 300px;
 }
 
 #singleImage{
@@ -154,7 +154,7 @@ body{
 }
 
 #whatImg{
-    min-height:1800px;
+    min-height:2500px;
     background-size: cover;
     z-index: 10;
 }
@@ -194,15 +194,16 @@ body{
 }
 
 #childImg{
-    min-height:2000px;;
+    min-height:2400px;;
     background-size: cover;
     z-index: 200;
 }
 
 #parentImg{
-    min-height:1500px;
+    min-height:1900px;
     background-size: cover;
     z-index: 100;
+    background-position: top;
 }
 
 #seniorImg{
@@ -215,7 +216,7 @@ body{
     min-height:2500px;
     background-size: cover;
     z-index: 100;
-    background-position: top;
+    background-position: center;
 }
 
 #bernSubBodyText{
@@ -333,4 +334,68 @@ body{
     text-decoration: none;
     color: black;
     padding: 10px;
+}
+
+.descList {
+    text-align: left
+}
+
+.secondHeading {
+    padding-top: 30px;
+    font-size: 25px;
+    text-decoration: underline;
+    text-align: left
+}
+
+.secondBody {
+    font-size: 20px;
+}
+
+.newParagraph {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.solidDivider {
+    margin-top:80px;
+    border-top: 2px solid #424242;
+    width: 900px;
+}
+
+#titleParagraph {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#titleBodyText {
+    background-color: white;
+    height: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 50px;
+    
+}
+
+#childrenBodyText {
+    background-color: white;
+    height: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 125px;
+}
+
+#parentBodyText {
+    padding-bottom: 150px;
+}
+
+#seniorBodyText {
+    padding-bottom: 150px;
+}
+
+#youText {
+    padding-bottom: 100px;
 }
